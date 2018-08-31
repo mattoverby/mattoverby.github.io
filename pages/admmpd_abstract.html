@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<title>ADMM ⊇ Projective Dynamics</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<style>
+	body {
+		font: 16px source-sans-pro-1, source-sans-pro-2, "Source Sans Pro", "Lucida Sans", "Lucida Sans Unicode", "Bitstream Vera Sans", Tahoma, sans-serif;
+		line-height: 1.5em;
+		background: white;
+		color: black;
+		width: 640px;
+		margin: 2em auto;
+	}
+	p { margin: 0em 0em; }
+	h1 {
+		font-size: 1.8em;
+		line-height: 1.2em;
+		font-weight: 700;
+		text-align: center;
+		white-space: nowrap
+	}
+	#authors { visibility: hidden;}
+	#authors a {
+		visibility: visible;
+		margin: 0 1em;
+	}
+	pre {
+		font-size: 0.8em;
+		width: auto;
+		overflow: auto;
+	}
+	</style>
+	<script type="text/javascript" src="http://use.typekit.com/nri4usf.js"></script>
+	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+</head>
+
+<body>
+
+	<h1>ADMM ⊇ Projective Dynamics: Fast Simulation of <br/> Hyperelastic Models with Dynamic Constraints</h1>
+
+	<center>
+	<p id="authors">
+	<a href="http://www.mattoverby.net">Matthew Overby</a>,
+	<a href="http://www-users.cs.umn.edu/~brow2327">George E. Brown</a>,
+	<a href="http://www-users.cselabs.umn.edu/~lixx4611">Jie Li</a>,
+	<a href="http://rahul.narain.name">Rahul Narain</a>
+	</p>
+
+	<a href="http://twin-cities.umn.edu/">University of Minnesota</a>
+	<p><br/>IEEE Transactions on Visualization and Computer Graphics (TVCG), 2017</p>
+
+	<img width="560" src="../images/admm-pd-clothpile.png"/>
+	</center>
+
+	<p><br/>
+	<b>Abstract:</b>
+	We apply the alternating direction method of multipliers (ADMM) optimization algorithm to implicit time integration of elastic bodies, and show that the resulting method closely relates to the recently proposed projective dynamics algorithm.
+	However, as ADMM is a general purpose optimization algorithm applicable to a broad range of objective functions, it permits the use of nonlinear constitutive models and hard constraints while retaining the speed, parallelizability, and robustness of projective dynamics.
+	We further extend the algorithm to improve the handling of dynamically changing constraints such as sliding and contact, while maintaining the benefits of a constant, prefactored system matrix.
+	We demonstrate the benefits of our algorithm on several examples that include cloth, collisions, and volumetric deformable bodies with nonlinear elasticity and skin sliding effects.
+	</p>
+
+
+	<ul>
+	<li><a href="../files/admm-pd-overby17.pdf">Preprint</a> [PDF, 3MB]</li>
+	<li><a href="../files/supplemental-document-admm.pdf">Supplemental Document</a> [PDF, 0.2MB]</li>
+	<li><a href="../files/admm-pd-overby17-video.mp4">Video</a> [MP4, 25MB]</li>
+	<li><a href="https://doi.org/10.1109/TVCG.2017.2730875">IEEE Link</a></li>
+	<li><a href="http://www.github.com/mattoverby/admm-elastic">Source Code</a></li>
+	</ul>
+
+	<center>
+	<br/>
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/ltW-cjylZ3I" frameborder="0" allowfullscreen></iframe>
+	<br/>
+	</center>
+
+	<p>
+	<b>BibTeX:</b>
+	<pre>
+	@article{overby2017admmpd, 
+	  author={Overby, Matthew and Brown, George E. and Li, Jie and Narain, Rahul},
+	  journal={IEEE Transactions on Visualization and Computer Graphics}, 
+	  title={ADMM $\supseteq$ Projective Dynamics: Fast Simulation of Hyperelastic Models with Dynamic Constraints}, 
+	  year={2017}, 
+	  volume={23}, 
+	  number={10}, 
+	  pages={2222-2234}, 
+	  doi={10.1109/TVCG.2017.2730875}, 
+	  ISSN={1077-2626}, 
+	  month={Oct},
+	}
+	</pre>
+	</p>
+
+</body>
+</html>
+
+
