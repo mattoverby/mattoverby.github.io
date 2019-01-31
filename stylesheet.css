@@ -153,14 +153,14 @@ h3 {
 }
 
 #menu li {
-	font: 18px Verdana, Helvetica, sans-serif;
+	font: 16px Verdana, Helvetica, sans-serif;
 	margin: 0;
 	padding: 0;
 }
 
 #menu a {
 	background: #333;
-	border-width: 0px 12px 0px 0px;
+	border-width: 0px 0px 0px 0px;
 	border-style: solid;
 	border-color: #595959;
 	color: #CCCCCC;
@@ -173,7 +173,7 @@ h3 {
 #menu a:hover {
 	color: #000;
 	padding-bottom: 8px;
-	border-radius: 8px 0px 0px 8px;
+	border-radius: 0px 8px 8px 0px;
 }
 
 #menu a.green:hover {
@@ -190,6 +190,12 @@ h3 {
 	background-color: #6495ED;
 	border-color: blue;
 }
+
+#menu a.orange:hover {
+	background-color: #CC9966;
+	border-color: blue;
+}
+
 
 #standalone { 
 	float: center;
