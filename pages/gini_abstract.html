@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<title>GINI</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<style>
+	body {
+		font: 16px source-sans-pro-1, source-sans-pro-2, "Source Sans Pro", "Lucida Sans", "Lucida Sans Unicode", "Bitstream Vera Sans", Tahoma, sans-serif;
+		line-height: 1.5em;
+		background: white;
+		color: black;
+		width: 640px;
+		margin: 2em auto;
+	}
+	p { margin: 0em 0em; }
+	h1 {
+		font-size: 1.8em;
+		line-height: 1.2em;
+		font-weight: 700;
+		text-align: center;
+		white-space: nowrap
+	}
+	#authors { visibility: hidden;}
+	#authors a {
+		visibility: visible;
+		margin: 0 1em;
+	}
+	pre {
+		font-size: 0.8em;
+		width: auto;
+		overflow: auto;
+	}
+	</style>
+	<script type="text/javascript" src="http://use.typekit.com/nri4usf.js"></script>
+	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+</head>
+
+<body>
+
+	<h1>Globally Injective Geometry Optimization <br /> with Non-Injective Steps</h1>
+
+	<center>
+	<p id="authors">
+	<a href="http://www.mattoverby.net">Matthew Overby</a>,
+	<a href="http://dannykaufman.io">Danny Kaufman</a>,
+	<a href="http://rahul.narain.name">Rahul Narain</a>
+	</p>
+
+	<p><br/>Computer Graphics Forum (Proc. Symposium on Geometry Processing), 2021</p>
+	<img width="600" src="../images/gini_teaser.png"/>
+	</center>
+
+	<p><br/>
+	<b>Abstract:</b>
+We present a method to minimize distortion and compute globally injective mappings from non-injective initialization.
+Many approaches for distortion minimization subject to injectivity constraints require an injective initialization and feasible intermediate states.
+However, it is often the case that injective initializers are not readily available, and many distortion energies of interest have barrier terms that stall global progress.
+The alternating direction method of multipliers (ADMM) has recently gained traction in graphics due to its efficiency and generality.
+In this work we explore how to endow ADMM with global injectivity while retaining the ability to traverse non-injective iterates.
+We develop an iterated coupled-solver approach that evolves two solution states in tandem.
+Our primary solver rapidly drives down energy to a nearly injective state using a dynamic set of efficiently enforceable inversion and overlap constraints.
+Then, a secondary solver corrects the state, herding the solution closer to feasibility.
+The resulting method not only compares well to previous work, but can also resolve overlap with free boundaries.
+	</p>
+
+
+	<ul>
+	<li><a href="">Preprint</a> [Coming Soon]</li>
+	<li><a href="">Video</a> [Coming Soon]</li>
+	<li><a href="">Publication Link</a> [Coming Soon]</li>
+	<li><a href="">Source Code</a> [Coming Soon]</li>
+	</ul>
+
+<!--
+	<center>
+	<br/>
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/ltW-cjylZ3I" frameborder="0" allowfullscreen></iframe>
+	<br/>
+	</center>
+
+	<p>
+	<b>BibTeX:</b>
+	<pre>
+	@article{overby2017admmpd, 
+	  author={Overby, Matthew and Brown, George E. and Li, Jie and Narain, Rahul},
+	  journal={IEEE Transactions on Visualization and Computer Graphics}, 
+	  title={ADMM $\supseteq$ Projective Dynamics: Fast Simulation of Hyperelastic Models with Dynamic Constraints}, 
+	  year={2017}, 
+	  volume={23}, 
+	  number={10}, 
+	  pages={2222-2234}, 
+	  doi={10.1109/TVCG.2017.2730875}, 
+	  ISSN={1077-2626}, 
+	  month={Oct},
+	}
+	</pre>
+	</p>
+-->
+</body>
+</html>
+
+
